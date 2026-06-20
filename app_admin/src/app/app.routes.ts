@@ -4,6 +4,7 @@ import { TripListingComponent } from './trip-listing/trip-listing';
 import { EditTripComponent } from './edit-trip/edit-trip';
 
 export const routes: Routes = [
+  { path: '', component: TripListingComponent, pathMatch: 'full' },
   { path: 'add-trip', component: AddTripComponent },
-  { path: '', component: TripListingComponent, pathMatch: 'full' }
+  { path: "edit-trip", component: EditTripComponent}
 ];

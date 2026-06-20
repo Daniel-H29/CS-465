@@ -5,10 +5,11 @@ import { TripListingComponent } from './trip-listing/trip-listing';
 
 @Component({
   selector: 'app-root',
+  standalone:true,
   imports: [CommonModule, RouterOutlet, TripListingComponent],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
 export class App {
-  title = 'Travlr Getaways Admin';
+  title = 'Travlr Getaways Admin!';
 }

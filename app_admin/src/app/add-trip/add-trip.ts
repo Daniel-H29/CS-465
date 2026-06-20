@@ -10,7 +10,8 @@ selector: 'app-add-trip',
 standalone: true,
 imports: [CommonModule, ReactiveFormsModule],
 templateUrl: './add-trip.html',
-styleUrl: './add-trip.css'
+styleUrl: './add-trip.css',
+providers: [TripData]
 })
 export class AddTripComponent implements OnInit {
 addForm!: FormGroup;
